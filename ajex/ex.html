@@ -1,0 +1,20 @@
+<script src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	// var obj = new XMLHttpRequest();
+	// console.log(obj);
+	// alert(obj);
+
+$(document).ready(function(){
+	$(".btn").click(function(){
+		// alert(1);
+		$.get("getdata.php",function(xyz){
+			console.log(xyz);
+			$("#para").html(xyz);
+		})
+
+	})
+});
+
+</script>
+<button class="btn">ENTER</button>
+<p id="para">kkkk</p>
