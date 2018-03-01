@@ -1,0 +1,52 @@
+.menu{
+	background: #e7e7e7;
+}
+.navbar-default{
+	background:#e7e7e7;
+	border-color:none;
+}
+.navbar{
+	margin-bottom:0px;
+}
+.heading {
+    background: black;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.footerbox{
+    background: black;
+    color:white;
+
+}
+.services{
+    /*border:1px solid;*/
+    width:16.66%;
+    float:left;
+    font-size:14px;
+    
+}
+.services h2{
+    font-weight: normal;
+    /*text-transform: uppercase;*/
+    font-variant: small-caps;
+    font-size:18px;
+    padding-bottom: 15px;
+
+}
+.services ul{
+    list-style: none;
+    padding-left: 0;
+}
+.services ul li{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.services ul li a{
+    color:gray;
+text-decoration: none;
+font-variant: small-caps;
+}

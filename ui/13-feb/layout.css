@@ -1,0 +1,181 @@
+*{
+	margin:0;
+}
+body{
+	background:white;
+	margin:0;
+	font-family:arial,times;
+}
+.heading{
+	background:black;
+	color:white;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size:20px;
+	text-transform:capitalize;
+
+}
+.products{
+	/*background:gray;*/
+}
+.products h2{
+	text-align:center;
+	padding-top:25px;
+	padding-bottom:25px;
+	
+}
+.products_box{
+	width:1200px;
+	/*border:1px solid;*/
+	margin-left:auto;
+	margin-right:auto;
+	overflow: auto;
+
+}
+.products_img{
+	/*border:1px solid;*/
+	width:279px;
+	float:left;
+}
+.right_box{
+	float:right;
+}
+.middle_box{
+	margin-left:26px;
+}
+.menu{
+	/*border:1px solid;*/
+	width:1200px;
+	margin:auto;
+}
+.menu ul{
+	padding-left:0;
+	list-style:none;
+	overflow:auto;
+	
+}
+.menu ul li{
+	/*border:1px solid;*/
+	/*display:inline-block;*/
+	float:left;
+}
+.menu ul li a{
+	/*border:1px solid;*/
+	display: block;
+	padding:20px 15px;
+	color:gray;
+	text-decoration: none;
+	font-variant: small-caps;
+}
+.menu ul li a:hover{
+	background:lightgray;
+}
+.menu ul li:last-child{
+	float:right;
+	padding-top:20px;
+	padding-bottom: 20px;
+}
+.text{
+	width:200px;
+	height:35px;
+}
+.travel{
+	/*border:1px solid;*/
+}
+.travel img{
+	width:100%;
+}
+.copyright{
+	background: black;
+	color:white;
+}
+.container{
+	width:1200px;
+	margin:auto;
+	overflow: auto;
+	padding:8px 0;
+	font-size:10px;
+}
+.copyright-content{
+	/*border:1px solid;*/
+	float:left;
+	font-variant: small-caps;
+}
+.privacy,.terms{
+	float:right;
+}
+.footerbox{
+	background: black;
+	color:white;
+
+}
+.services{
+	/*border:1px solid;*/
+	width:16.66%;
+	float:left;
+	font-size:14px;
+	
+}
+.services h2{
+	font-weight: normal;
+	/*text-transform: uppercase;*/
+	font-variant: small-caps;
+	font-size:18px;
+	padding-bottom: 15px;
+
+}
+.services ul{
+	list-style: none;
+	padding-left: 0;
+}
+.services ul li{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.services ul li a{
+	color:gray;
+text-decoration: none;
+font-variant: small-caps;
+}
+.banner1{
+	width:1200px;
+	margin: 20px auto;
+	/*border:1px solid;*/
+}
+.banner1 img{
+	width:100%;
+}
+.copyright{
+	border-top:1px solid gray;
+}
+.last_col{
+	font-size:10px;
+}
+										
+.product_img_box{
+	/*border:1px solid;*/
+	width:24.9%;
+	float:left;
+}
+.product_img_box_first{
+	width:50%;
+}
+.product_box{
+	width:1200px;
+	overflow: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.product_img_box_right{
+	float:right;
+}
+.product_img_box_middle{
+	/*margin-left: 20px;*/
+}
+.product_box img{
+	width:100%;
+}
