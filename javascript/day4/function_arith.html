@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script >
+		function do_some(){
+			rec1 = Math.round(10* Math.random());
+			console.log(rec1);
+			rec2=Math.round(10*Math.random());
+			sum=rec1 + rec2;
+			str="Enter"+rec1+"+"+rec2;
+			console.log(str);
+			document.getElementById("msg").innerHTML=str;
+		}
+		function check(){
+			if(document.getElementById("txt").value !=sum){
+				document.getElementById("err").innerHTML="invalid";
+			}
+			else{
+				document.getElementById("err").innerHTML="valid";
+
+			}
+		}
+		function reload(){
+			do_some();
+
+		}
+
+
+	</script>
+</head>
+<body onload="do_some()">
+	<ul>
+		<li id="msg"></li>
+		<li><button onclick="reload()">Reload</button></li>
+		<li>
+			<input type="text" id="txt">
+		</li>
+		
+		<li>
+			<button onclick="check()">Enter</button>
+		</li>
+			
+		<li id="err"></li>
+	</ul>
+
+</body>
+</html>

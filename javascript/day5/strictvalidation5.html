@@ -1,0 +1,14 @@
+<input type="text" id="txt" placeholder="date-of-birth">
+<button id="btn">Enter</button>
+<p id="result_data"></p>
+<script >
+	document.getElementById("btn").addEventListener("click",function(){
+		//alert("test");
+		//02/01/1995
+		pattern = /^([0]?[1-9]|[1][0-9]|[2][0-9]|[3][0-1])\/([0]?[1-9]|[1][0-2])\/([\d]{4})$/;// ()is a group. ? is using for optional sintext. when we written \. out side the group its means . is compalsary and now @ is also compalesary
+		rec=document.getElementById("txt").value;
+		result =pattern.test(rec);//test is inbuild function.its using for compare the pattern.
+		//alert(result);
+		document.getElementById("result_data").innerHTML = (result==true)?"ok":"invalid";
+	})
+</script>

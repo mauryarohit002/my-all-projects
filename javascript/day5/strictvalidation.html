@@ -1,0 +1,13 @@
+<input type="text" id="txt" placeholder="Puraj Pawar">
+<button id="btn">Enter</button>
+<p id="result_data"></p>
+<script >
+	document.getElementById("btn").addEventListener("click",function(){
+		//alert("test");
+		pattern = /^[a-zA-Z][a-zA-Z ]{1,}[a-zA-Z]$/;
+		rec=document.getElementById("txt").value;
+		result =pattern.test(rec);//test is inbuild function.its using for compare the pattern.
+		//alert(result);
+		document.getElementById("result_data").innerHTML = (result==true)?"ok":"invalid";
+	})
+</script>

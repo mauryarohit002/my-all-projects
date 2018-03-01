@@ -1,0 +1,21 @@
+<script type="text/javascript">
+calc=function(){
+// console.log(document);
+// console.log(document.getElementsByClassName("X1"));
+// console.log(document.getElementsByClassName("X1")[0]);
+data1=document.getElementsByClassName("X1")[0].value;
+data2=document.getElementsByClassName("X1")[1].value;
+// console.log(document.getElementsByTagName("p"));
+document.getElementsByTagName("p")[0].innerHTML= (+data1) + (+data2);
+
+}
+	
+
+
+</script>
+<input type="text" placeholder="ENTER NO.1" class="X1"/>
+<input type="text" placeholder="ENTER NO.2" class="X1"/>
+<button onclick="calc()">ENTER</button>
+<p >hello</p>
+<p >hello</p>
+

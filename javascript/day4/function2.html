@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script >
+		function do_some(){
+			//alert(22);
+			timerdata=setInterval(function(){
+				//alert(2);
+				rec = new Date();
+				str=rec.getHours() +":"+rec.getMinutes() +":"+rec.getSeconds();
+				document.getElementById("result").innerHTML=str;
+			},1000);
+		}
+		function stopTimer(){
+			clearInterval(timerdata);
+		}
+		function startTimer(){
+			do_some();
+		}
+
+	</script>
+</head>
+<body onload="do_some()">
+	<div id="result"></div>
+	<button onclick="stopTimer()">stop</button>
+	<button onclick="startTimer()">start</button>
+
+</body>
+</html>

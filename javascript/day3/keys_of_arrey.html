@@ -1,0 +1,52 @@
+<meta charset="utf-8"><noscript>
+	no js
+</noscript>
+<script >
+	data=[100,30,200,40,30];
+	console.log(data);
+
+	data1=new Array();
+	data1[0]=90;
+	data1[1]=920;
+	data1[2]=290;
+	console.log(data1);
+	console.log(data.length);
+
+	data.push(890);//at end adding the data.(last position)
+	console.log(data);
+	data.unshift(1890);//add the inthe starting (1st position)
+	console.log(data);
+	data.pop();		//removing the last position data.
+	console.log(data);
+	data.shift();   //removing the 1st position data.
+	console.log(data);
+
+	pos =data.indexOf(30); //show the 1st position.(serching the position from starting)
+	console.log(pos);
+	pos = data.lastIndexOf(30);//show the last position
+	console.log(pos);
+	pos = data.indexOf(130);//if there is no data in the array they will so -1 position
+	console.log(pos);
+
+	str = data.join(); //join with camma.
+	console.log(str);
+	str = data.join("");// join with without space.
+	console.log(str);
+	str = data.join("+");// join with + operater.
+	console.log(str);
+	console.log(eval(str)); //evaluate the arithmatic .
+
+	delete data[2]; //delete the value in array but position is stil empty showing.[2] position of array.
+	console.log(data);
+
+	data2=[90,20,39,40,60];
+	console.log(data2);
+
+	newdata= data2.splice(1,3); //splite array 1st is position of array and with 3 position.
+	console.log(newdata);//new array prints.
+	console.log(data2);
+
+
+
+
+</script>

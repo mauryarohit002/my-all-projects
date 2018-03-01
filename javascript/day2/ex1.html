@@ -1,0 +1,27 @@
+<script type="text/javascript">
+calc=function(){
+	// alert(1);
+// console.log(document);
+// console.log(document.getElementById("X1"));
+data1=document.getElementById("X1").value;
+// console.log(data1);
+// console.log(typeof data1);
+data2=document.getElementById("X2").value;
+// console.log(data2);
+// ans=data2 + data2;
+// ans= Number(data1) + Number(data2);
+//  ans=parseInt(data2) + parseInt(data2);
+ ans=parseFloat(data2) + parseFloat(data2);
+//console.log(ans);
+// console.log(document.getElementById("para"));
+document.getElementById("para").innerHTML=ans.toFixed(2);
+}
+	
+
+
+</script>
+<input type="text" placeholder="ENTER NO.1" id="X1"/>
+<input type="text" placeholder="ENTER NO.2" id="X2"/>
+<button onclick="calc()">ENTER</button>
+<p id="para">hello</p>
+

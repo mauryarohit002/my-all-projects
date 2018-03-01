@@ -1,0 +1,14 @@
+<input type="text" id="txt" placeholder="yahoo.co.in">
+<button id="btn">Enter</button>
+<p id="result_data"></p>
+<script >
+	document.getElementById("btn").addEventListener("click",function(){
+		//alert("test");
+		//(yahoo).(co)(.in), yahoo.in, 99acres.com, ask-to-solve.com
+		pattern = /^([a-zA-Z0-9][a-zA-Z0-9\-]+[a-zA-Z0-9])\.([a-zA-Z]{2,})(\.[a-zA-Z]{2,})?$/;// 
+		rec=document.getElementById("txt").value;
+		result =pattern.test(rec);//test is inbuild function.its using for compare the pattern.
+		//alert(result);
+		document.getElementById("result_data").innerHTML = (result==true)?"ok":"invalid";
+	})
+</script>

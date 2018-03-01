@@ -1,0 +1,20 @@
+<input type="text" id="txt">
+<input type="button" value="ENTER" onclick="check()">
+<p id="para">HELLO</p>
+<script >
+	function check(){
+		//alert(1);
+		rec = document.getElementById("txt").value;
+		//alert(rec);
+		//alert(rec.length);
+		err = (rec.length==0)?"Empty":"ok";
+		document.getElementById("para").innerHTML ="checking..."
+		setTimeout(function(){
+			//alert(1111);
+			document.getElementById("para").innerHTML=err;
+
+		},2000);
+	}
+
+
+</script>
