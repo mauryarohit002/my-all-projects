@@ -1,0 +1,7 @@
+listen
+
+htdocs
+
+localhost:80
+80 is a port. port rang 1-65535
+
