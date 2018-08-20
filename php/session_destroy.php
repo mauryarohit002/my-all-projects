@@ -1,0 +1,10 @@
+<?php 
+session_start();
+session_regenerate_id(true);
+unset($_SESSION['name']);
+unset($_SESSION['age']);
+
+session_destroy();
+
+
+ ?>
