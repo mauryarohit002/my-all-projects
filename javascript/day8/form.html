@@ -1,0 +1,29 @@
+<html>
+<body onload="get_random_number()">
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<div class="container">
+	<ul>
+		<li>Name</li>
+		<li><input type="text" id="uname"></li>
+		<li>Mobile</li>
+		<li><input type="text" id="umobile"></li>
+		<li>Dob</li>
+		<li><input type="text" id="udob"></li>
+		<li>Username</li>
+		<li><input type="text" id="username"></li>
+		<li>EmailId</li>
+		<li><input type="text" id="uemail"></li>
+		<li>Password</li>
+		<li><input type="text" id="upass"></li>
+		<li>Confirm Password</li>
+		<li><input type="text" id="ucpass"></li>
+		<li><span id="rand_data"></span><button onclick="get_random_number()">Reload</button></li>
+		<li><input type="text" id="rand_txt"></li>
+		<li><input type="button" value="check" onclick="check_validation()"></li>
+	</ul>
+	<div id="errormsg"></div>
+</div>
+<script type="text/javascript" src="validation.js"></script>
+<script type="text/javascript" src="check_validation.js"></script>
+</body>
+</html>

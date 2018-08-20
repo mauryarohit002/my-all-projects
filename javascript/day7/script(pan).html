@@ -1,0 +1,13 @@
+<script >
+	/* AAAPL1234C: First five characters are letters,next four numerals, last character letter.
+*/
+record="aaaaa2222c";
+record= record.toUpperCase();
+
+pattern=/^[A-Z]{5}[0-9]{4}[A-Z]$/;
+
+result=pattern.test(record);
+
+alert(result);
+
+</script>

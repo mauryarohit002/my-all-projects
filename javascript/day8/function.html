@@ -1,0 +1,10 @@
+<script >
+	function validate_alpha(rec) {
+		var pattern=/^[a-zA-Z]+$/;// + denotes for {1,} 1 to infinity
+		var result=pattern.test(rec);
+		// alert(result);
+		return result;
+	}
+	ans=validate_alpha("pratik");
+	console.log(ans);
+</script>

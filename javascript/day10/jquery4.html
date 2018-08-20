@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		// alert(1);
+		$(".btn").click(function(){
+			// console.log($(".txt"));
+			// console.log($(".txt").val().length);
+			if($(".txt").val().length>0){
+				pattern=/^[1-9][0-9]{9}$/;
+				res=pattern.test($(".txt").val());
+				// if(res==true){
+				// 	$(".para").html("<b> ok </b>");
+				// }
+				// else{
+				// 	$(".para").html("<b> Invalid </b>");
+				// }
+				// (condition)?(true statement):(false statement);
+				(res==true)?($(".para").html("<b> ok </b>")):($(".para").html("<b> Invalid </b>"));
+			}
+			else{
+				// console.log($(".para"));
+				// $(".para").text("Empty");
+				// $(".para").text("<b>Empty</b>");
+				$(".para").html("<b>Empty</b>");
+			}
+		});
+
+	});
+</script>
+	</head>
+<body>
+<input type="text" class="txt" placeholder="Enter Mobile Number">
+<button class="btn">Validate</button>
+<p class="para"></p>
+</body>
+</html>

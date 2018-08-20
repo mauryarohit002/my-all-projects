@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script >
+		$(document).ready(function(){
+			$("button").click(function(){
+				$.get("http://localhost/rohit/New%20folder/php/day7/record.php",function(response){
+					// console.log(response);
+					$(p).html(response);
+				});
+			})
+		});
+		
+	</script>
+</head>
+<body>
+	<button>Get Data</button>	
+	<p></p>
+
+</body>
+</html>

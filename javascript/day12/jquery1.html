@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("input[type=button]:first").click(function(){
+				// alert(1);
+				wi=$(".img").attr("width");
+				// alert(wi);
+				hi=$(".img").attr("height");
+				$("#para").html("width="+wi+","+" height="+hi);
+
+			})
+			$("input[type=button]:last").click(function(){
+				// alert(1);
+				nw=$(".x1").val();
+				nh=$(".x2").val();
+				// alert(nw);
+				$(".img").attr("width",nw);
+				$(".img").attr("height",nh);
+
+
+
+			})
+		})
+	</script>
+</head>
+<body>
+	<input type="button" value="Enter">
+	<input type="button" value="change">
+	<img src="pro.jpg" class="img" width="200" height="200">
+	<p id="para"></p>
+	<input type="text" class="x1">
+	<input type="text" class="x2">
+
+</body>
+</html>

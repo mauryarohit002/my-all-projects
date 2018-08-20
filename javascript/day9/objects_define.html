@@ -1,0 +1,26 @@
+<script type="text/javascript">
+	var data= {};
+	data.name="Ajay";
+	data.age=20;
+	data[6]=201;
+	data.subject=["math","english"];
+	data.technology={"FrontEnd":"HTml","backEnd":"PHP"};
+	console.log(data);
+
+	console.log(data.subject[1]);
+	console.log(data.technology['FrontEnd']);
+	console.log(data.technology.FrontEnd);
+
+	console.log(data.name);
+	console.log(data[6]);
+	console.log(data['name']);
+
+	data1=new Object();
+	data1.technology={"FrontEnd":"HTml","backEnd":"PHP"};
+
+	console.log(data1);
+	console.log(typeof data1);
+	console.log(typeof data1.technology);
+	console.log(typeof data1.technology.FrontEnd);
+
+</script>

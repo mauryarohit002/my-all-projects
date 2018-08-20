@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".chk").change(function(){
+			// alert(1);
+			// console.log($(this));
+			// console.log($(this).is(":checked"));
+			// if($(this).is(":checked")){
+			// 	$(".txt").attr("type","text");
+			// }
+			// else{
+			// 	$(".txt").attr("type","password");
+
+			// }
+
+			($(this).is(":checked"))?$(".txt").attr("type","text"):$(".txt").attr("type","password");
+			})
+		})
+
+	</script>
+</head>
+<body>
+	<input type="checkbox" class="chk">
+	<input type="password" class="txt">
+
+</body>
+</html>

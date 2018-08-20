@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body onload="showdata()">
+<script type="text/javascript">
+	
+	function showdata(){
+		var person= function(name,subject,mark,mobile){
+			 var rec={};
+			 // var rec= new Object();
+
+			 rec.name=name;
+			 rec.subject=subject;
+			 rec.mark=mark;
+			 rec.mobile=mobile;
+			 return rec;
+		}
+
+		var stud1 = new person("Rohit","Maths",99,9839343484);
+		var stud2 = new person("Aniket","Maths",95,9832343484);
+		var stud3 = new person("Tapas","Maths",91,9839143484);
+
+		var student={
+			rec1:stud1,rec2:stud2,rec3:stud3
+		}
+
+		console.log(student);
+
+		str="<tr><th>Name</th><th>Subject</th><th>Mark</th><th>Mobile</th></tr>";
+
+		for(ans in student){
+			console.log(student[ans]);
+
+			str=str + "<tr>";
+			str=str + "<td>" + student[ans].name + "</td>";
+			str=str + "<td>" + student[ans].subject + "</td>";
+			str=str + "<td>" + student[ans].mark + "</td>";
+			str=str + "<td>" + student[ans].mobile + "</td>";
+			str=str + "</tr>";
+		}
+		console.log(str);
+		// document.getElementById("finaldata").innerHTML=str;
+		document.querySelector("#finaldata").innerHTML=str;
+
+	}
+</script>
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<table class="table" id="finaldata">
+	
+</table>
+</body>
+</html>

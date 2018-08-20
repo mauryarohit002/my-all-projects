@@ -1,0 +1,12 @@
+<script >
+	record="Hello@1";
+
+	pattern=/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#]).{4,8}$/;
+
+	//.{4,8} in this . written for from each group in atlist one character are required.  * for each location and . written for each one.
+	//?= current character on word;
+
+	result=pattern.test(record);
+
+	alert(result);
+</script>

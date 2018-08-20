@@ -1,0 +1,44 @@
+<script type="text/javascript">
+	// local & globle scope
+	x=10;
+	function hello(){
+		y=20;
+		console.log(y+x);
+	}
+	hello();
+
+	function hello1(){
+		// var a=10;
+		a=10;
+		console.log(a);
+	}
+	hello1();
+	 console.log(a);
+
+	 // hoisting
+
+	 var z;
+	 z=110;
+	 console.log(z);
+
+	 b=10;
+	 console.log(b);
+	 var b;
+
+	 console.log(c);
+	 var c=290;
+
+	 // spread & rest parameter
+
+	 function hello2(x,y,z){
+	 	console.log(x+y+z);
+	 }
+	 hello2(20,30,40);
+
+	 function hello3(x1,...data){
+	 	console.log(data);
+	 	console.log(x);
+	 }
+	 hello3(10,30,20);
+	 
+</script>
